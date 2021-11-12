@@ -1,0 +1,106 @@
+.place-order{
+    margin: 50px 0;
+}
+
+.place-order h2{
+    margin-bottom: 50px;
+}
+
+.order-form{
+}
+
+.order-form h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.order-form input{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.order-form button{
+    padding: 10px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    border: none;
+    background-color: #ffb400;
+    font-size: 16px;
+    color: white;
+    font-family: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.order-form button:hover{
+    background-color: #f3ab05;
+}
+
+.order-form .save-btn{
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px;
+    background-color: #01a78b;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.order-form .save-btn:hover{
+    background-color: #03b395;
+}
+
+.place-order .car img{
+    width: 100%;
+}
+
+.place-order .car h3{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.place-order .car .features{
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.place-order .car .price{
+    font-size: 30px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.place-order .car button{
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px auto 0;
+    background-color: #ffb400;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.place-order .car button:disabled{
+    background-color: gray;
+    pointer-events: none;
+}
+
+.place-order .car button:hover{
+    background-color: #f3ab05;
+}

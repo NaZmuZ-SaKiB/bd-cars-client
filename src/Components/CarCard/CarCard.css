@@ -1,0 +1,29 @@
+.car-card{
+    max-width: 345px;
+    margin: 0 auto;
+    transition: 0.9s ease;
+}
+
+.car-card:hover{
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 15px;
+}
+
+.car-card-action{
+    display: block;
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    border-top: 1px solid #ffb400;
+    color: #ffb400;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.car-card-action:hover{
+    background-color: #ffb400;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,54 @@
+.review-card{
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    transition: .9s;
+}
+
+.review-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+    color: white;
+}
+
+.review-card:hover::before{
+    width: 100%;
+}
+
+.review-card::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ffb400;
+    transition: .9s;
+    z-index: -1;
+}
+
+.review-card .rating{
+    margin-bottom: 15px;
+}
+
+.review-card .rating .rate{
+    transition: .9s;
+}
+
+.review-card:hover .rating .rate{
+    color: white;
+    transform: rotatex(360deg);
+}
+
+.review-card .name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.review-card .message{
+    font-size: 15px;
+}
