@@ -1,16 +1,18 @@
-# BEST PARK WEBSITE
+# BD CARS WEBSITE
 
-Live Link of this project (https://best-park.web.app/).
+Live Link of this project (https://bd-cars.web.app/).
 
 ## Description
-This is a website of an ammusement park named Best Park. There are several rides to chose from.
-Special packages are also available.
+This is a website of a car shop in Bangladesh. There are many cars to buy.
+User can login and purchase any car from the shop via online.
 
 ## About
 
-- This is a website of an ammusement park
-- There are 7 types of rides to chose
-- There are 3 different packages to chose
-- You can check your orders and cancel if you want
-- Admin can delete or aprove any order
-- Admin can also add a new ride
+- This is a website of a car shop
+- There are many cars to chose from
+- User can login and place an order
+- User can check order status in dashboard
+- User can cancel his/her order
+- User can add a review about the shop
+- Admin can make changes to order status
+- Admin can also add a new car or delete car

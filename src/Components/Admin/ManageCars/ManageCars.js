@@ -71,8 +71,7 @@ const ManageCars = () => {
     }
 
     return (
-        <div>
-            {loading && <Loading />}
+        <>
             <h2>Manage Cars</h2>
 
             <TableContainer sx={{ mt: 5, maxWidth: '100vw', overflowX: 'scroll' }}>
@@ -137,7 +136,8 @@ const ManageCars = () => {
                     </Button>
                 </DialogActions>
             </Dialog>
-        </div>
+            {loading && <Loading />}
+        </>
     );
 };
 

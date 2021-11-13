@@ -16,7 +16,7 @@ const AddReview = () => {
 
     const addReview = e => {
         e.preventDefault();
-        if (rating > 0 || message) return;
+        if (rating === 0 || !message) return;
 
         setLoading(true);
 
@@ -28,7 +28,6 @@ const AddReview = () => {
 
         axios.post(`${process.env.REACT_APP_SERVER_URL}/reviews`, review)
             .then(res => {
-                console.log(res.data)
                 if (res.data?.insertedId) {
                     setSuccess('Successfully added review');
                     setError('');

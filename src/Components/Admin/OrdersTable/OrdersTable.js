@@ -42,7 +42,6 @@ const OrdersTable = ({ orders, getMyOrders, getAllOrders }) => {
     const updateOrder = (id, status) => {
         axios.put(`${process.env.REACT_APP_SERVER_URL}/orders/${id}?status=${status}`)
             .then(res => {
-                console.log(res.data)
                 if (res.data.modifiedCount > 0) {
                     setSuccess(`Successfully ${status === 'Canceled' ? 'canceled' : 'updated'} order`);
                     setError('');
