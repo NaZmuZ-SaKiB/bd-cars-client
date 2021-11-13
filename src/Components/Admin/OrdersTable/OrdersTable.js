@@ -21,9 +21,10 @@ import './OrdersTable.css';
 import useAuth from '../../../Hooks/useAuth';
 
 const OrdersTable = ({ orders, getMyOrders, getAllOrders }) => {
-    const { setSuccess, setError } = useAuth();
     const [open, setOpen] = useState(false);
     const [orderId, setOrderId] = useState('');
+
+    const { setSuccess, setError } = useAuth();
 
     const location = useLocation();
 
@@ -56,8 +57,8 @@ const OrdersTable = ({ orders, getMyOrders, getAllOrders }) => {
     }
     return (
         <>
-            <TableContainer sx={{ mt: 5 }}>
-                <Table stickyHeader aria-label="sticky table" sx={{ minWidth: '800px' }}>
+            <TableContainer sx={{ mt: 5, maxWidth: '100vw', overflowX: 'scroll' }}>
+                <Table stickyHeader aria-label="orders table" sx={{ minWidth: '800px' }} >
                     <TableHead>
                         <TableRow>
 
@@ -107,6 +108,8 @@ const OrdersTable = ({ orders, getMyOrders, getAllOrders }) => {
                     </TableBody>
                 </Table>
             </TableContainer>
+
+            {/* order Delete dialog box */}
             <Dialog
                 open={open}
                 onClose={handleCloseConfirm}

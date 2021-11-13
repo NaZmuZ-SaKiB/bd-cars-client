@@ -1,0 +1,22 @@
+.admin-nav{
+    justify-content: center;
+}
+
+.admin-nav .title{
+    font-size: 28px;
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 599px){
+    .dashboard-icon{
+        display: block;
+        position: absolute;
+        color: white;
+        top: 13px;
+        left: 10px;
+        cursor: pointer;
+    }
+}

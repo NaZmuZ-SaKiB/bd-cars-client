@@ -15,12 +15,17 @@ import PaymentIcon from '@mui/icons-material/Payment';
 import StarsIcon from '@mui/icons-material/Stars';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
+import HomeIcon from '@mui/icons-material/Home';
 import LogoutIcon from '@mui/icons-material/Logout';
 
 // Local Imports
 import Nav from '../Nav/Nav';
 import './Admin.css';
 import useAuth from '../../Hooks/useAuth';
+import AdminNav from './AdminNav/AdminNav';
+import { Divider } from '@mui/material';
 
 const drawerWidth = 300;
 
@@ -37,6 +42,7 @@ const Admin = (props) => {
         <div className='drawer'>
             <List>
                 <Toolbar />
+                <Divider />
                 <Link to='pay'>
                     <ListItem button>
                         <ListItemIcon>
@@ -53,28 +59,59 @@ const Admin = (props) => {
                         <ListItemText >My Orders</ListItemText>
                     </ListItem>
                 </Link>
-                <Link to='all-orders'>
-                    {user?.role === 'admin' && <ListItem button>
-                        <ListItemIcon>
-                            <AssignmentIcon />
-                        </ListItemIcon>
-                        <ListItemText >All Orders</ListItemText>
-                    </ListItem>}
-                </Link>
-                <Link to='make-admin'>
-                    <ListItem button>
-                        <ListItemIcon>
-                            <AdminPanelSettingsIcon />
-                        </ListItemIcon>
-                        <ListItemText >Make Admin</ListItemText>
-                    </ListItem>
-                </Link>
                 <Link to='review'>
                     <ListItem button>
                         <ListItemIcon>
                             <StarsIcon />
                         </ListItemIcon>
                         <ListItemText >Review</ListItemText>
+                    </ListItem>
+                </Link>
+                {
+                    user?.role === 'admin' &&
+                    <>
+                        <Divider />
+                        <Link to='all-orders'>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <AssignmentIcon />
+                                </ListItemIcon>
+                                <ListItemText >All Orders</ListItemText>
+                            </ListItem>
+                        </Link>
+                        <Link to='add-car'>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <AddBoxIcon />
+                                </ListItemIcon>
+                                <ListItemText >Add Car</ListItemText>
+                            </ListItem>
+                        </Link>
+                        <Link to='manage-cars'>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <DirectionsCarIcon />
+                                </ListItemIcon>
+                                <ListItemText >Manage Cars</ListItemText>
+                            </ListItem>
+                        </Link>
+                        <Link to='make-admin'>
+                            <ListItem button>
+                                <ListItemIcon>
+                                    <AdminPanelSettingsIcon />
+                                </ListItemIcon>
+                                <ListItemText >Make Admin</ListItemText>
+                            </ListItem>
+                        </Link>
+                    </>
+                }
+                <Divider />
+                <Link to='/home'>
+                    <ListItem button>
+                        <ListItemIcon>
+                            <HomeIcon />
+                        </ListItemIcon>
+                        <ListItemText >Back to Home</ListItemText>
                     </ListItem>
                 </Link>
                 <ListItem button onClick={logOut}>
@@ -92,7 +129,7 @@ const Admin = (props) => {
 
     return (
         <>
-            <Nav handleDrawerToggle={handleDrawerToggle} />
+            <AdminNav handleDrawerToggle={handleDrawerToggle} />
             <Box sx={{ display: 'flex' }}>
                 <CssBaseline />
                 <Box

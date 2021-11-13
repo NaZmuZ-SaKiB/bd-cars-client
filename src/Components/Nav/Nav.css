@@ -94,14 +94,3 @@
 .dashboard-icon{
     display: none;
 }
-
-@media only screen and (max-width: 599px){
-    .dashboard-icon{
-        display: block;
-        position: absolute;
-        color: white;
-        top: 13px;
-        left: 10px;
-        cursor: pointer;
-    }
-}

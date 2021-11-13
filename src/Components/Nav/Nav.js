@@ -11,13 +11,12 @@ import Logo from '../../Images/logo-white.png';
 import useAuth from '../../Hooks/useAuth';
 import './Nav.css';
 
-const Nav = ({ handleDrawerToggle }) => {
+const Nav = () => {
     const [hideMenu, setHideMenu] = useState(true);
     const { user, logOut } = useAuth();
 
     return (
         <div className="nav-container">
-            <div className="dashboard-icon" onClick={handleDrawerToggle}><DashboardIcon /></div>
             <nav className="nav">
                 <Link to='/home' >
                     <img src={Logo} alt="Bd cars" className="nav__brand" />

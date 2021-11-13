@@ -1,0 +1,42 @@
+.img-input{
+    display: flex;
+    cursor: pointer;
+    background-color: rgb(241, 238, 238);
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 180px;
+    margin-bottom: 10px;
+}
+.add-img-icon{
+    color: rgb(0, 140, 255);
+    position: relative;
+    top: 5px;
+}
+
+.car-img img{
+    max-width: 100%;
+}
+
+.form-container__form.new-car{
+    width: 400px;
+}
+
+@media only screen and (max-width: 420px){
+    .form-container__form.new-car{
+        width: 100%;
+    }
+}
+
+.form-container textarea{
+    width: 100%;
+    padding: 20px 15px;
+    background-color: rgb(241, 238, 238);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    display: block;
+    resize: vertical;
+    min-height: 200px;
+}

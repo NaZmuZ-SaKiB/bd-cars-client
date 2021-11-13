@@ -18,6 +18,8 @@ import MyOrders from './Components/Admin/MyOrders/MyOrders';
 import AllOrders from './Components/Admin/AllOrders/AllOrders';
 import AddReview from './Components/Admin/AddReview/AddReview';
 import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
+import AddProduct from './Components/Admin/AddProduct/AddProduct';
+import ManageCars from './Components/Admin/ManageCars/ManageCars';
 
 function App() {
   const { user, success, error, openSuccess, openError, setOpenSuccess, setOpenError } = useAuth();
@@ -46,6 +48,8 @@ function App() {
               user?.role === 'admin' && <>
                 <Route path='all-orders' element={<AllOrders />} />
                 <Route path='make-admin' element={<MakeAdmin />} />
+                <Route path='add-car' element={<AddProduct />} />
+                <Route path='manage-cars' element={<ManageCars />} />
               </>
             }
             <Route path='review' element={<AddReview />} />
