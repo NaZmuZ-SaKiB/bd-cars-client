@@ -5,3 +5,9 @@
 .reviews h2{
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 600px) {
+    .reviews{
+        margin-bottom: 30px;
+    }
+}

@@ -48,6 +48,11 @@
     padding: 20px 15px;
 }
 
+.footer .links .link.icon{
+    color: #e0dfdf;
+    padding: 0 15px;
+}
+
 .footer .links .link:hover{
     color: white;
     cursor: pointer;

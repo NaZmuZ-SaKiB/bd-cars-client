@@ -19,7 +19,7 @@ import './Services.css';
 const Services = () => {
     return (
         <Container sx={{ pb: 10 }}>
-            <h2 style={{ marginBottom: '80px' }}>WE ARE THE BEST</h2>
+            <h2 className='services-heading'>WE ARE THE BEST</h2>
             <Grid container spacing={3}>
                 <Grid item xs={12} sm={6} md={3}>
                     <div className="service-card">

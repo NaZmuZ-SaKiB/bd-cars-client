@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 // Material UI
 import { Container, Grid } from '@mui/material';
 import CallIcon from '@mui/icons-material/Call';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 // Local Imports
 import './Footer.css';
@@ -45,6 +50,13 @@ const Footer = () => {
                     <p className="link">Terms & Conditions</p>
                     <p className="link">Privacy policy</p>
                     <p className="link">Refund policy</p>
+                </div>
+                <div className="links">
+                    <p className="link icon"><FacebookIcon /></p>
+                    <p className="link icon"><TwitterIcon /></p>
+                    <p className="link icon"><InstagramIcon /></p>
+                    <p className="link icon"><WhatsAppIcon /></p>
+                    <p className="link icon"><LinkedInIcon /></p>
                 </div>
                 <p className="copyright">&copy; 2021 Nazmuz Sakib | All Rights Reserved</p>
             </Container>

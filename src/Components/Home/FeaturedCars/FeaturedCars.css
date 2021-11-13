@@ -5,3 +5,14 @@
 .featured-cars h2{
     margin-bottom: 80px;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .featured-cars{
+        padding: 20px 0 50px;
+    }
+
+    .featured-cars h2{
+        margin-bottom: 30px;
+    }
+}
