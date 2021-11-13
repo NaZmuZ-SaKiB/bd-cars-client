@@ -128,12 +128,12 @@ const ManageCars = () => {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogTitle id="alert-dialog-title">
-                    Are you sure you want to delete this order?
+                    Are you sure you want to delete this car?
                 </DialogTitle>
                 <DialogActions>
                     <Button onClick={handleCloseConfirm}>Cancel</Button>
                     <Button color='error' onClick={() => deleteCar(carId, 'Canceled')} autoFocus>
-                        Delete
+                        Confrim
                     </Button>
                 </DialogActions>
             </Dialog>

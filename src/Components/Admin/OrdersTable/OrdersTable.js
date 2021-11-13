@@ -117,12 +117,12 @@ const OrdersTable = ({ orders, getMyOrders, getAllOrders }) => {
                 aria-describedby="alert-dialog-description"
             >
                 <DialogTitle id="alert-dialog-title">
-                    Are you sure you want to delete this order?
+                    Are you sure you want to cancel this order?
                 </DialogTitle>
                 <DialogActions>
                     <Button onClick={handleCloseConfirm}>Cancel</Button>
                     <Button color='error' onClick={() => updateOrder(orderId, 'Canceled')} autoFocus>
-                        Delete
+                        Confirm
                     </Button>
                 </DialogActions>
             </Dialog>

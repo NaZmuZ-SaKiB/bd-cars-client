@@ -92,7 +92,6 @@ const PlaceOrder = () => {
             address: form?.address || user.address
         }
 
-        console.log(newOrder);
         setOrder(newOrder);
     };
 
