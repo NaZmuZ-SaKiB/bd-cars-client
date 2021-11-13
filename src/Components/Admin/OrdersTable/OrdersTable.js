@@ -56,7 +56,7 @@ const OrdersTable = ({ orders, getMyOrders, getAllOrders }) => {
     }
     return (
         <>
-            <TableContainer sx={{ mt: 5, maxWidth: '100vw', overflowX: 'scroll' }}>
+            <TableContainer sx={{ mt: 5, maxWidth: '85vw', overflowX: 'scroll' }}>
                 <Table stickyHeader aria-label="orders table" sx={{ minWidth: '800px' }} >
                     <TableHead>
                         <TableRow>
